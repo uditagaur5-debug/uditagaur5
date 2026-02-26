@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 4</title>
+<style>
+body{font-family:Arial;text-align:center;background:#f0f0f0;padding:20px;}
+.box{background:#fff;padding:25px;border-radius:10px;max-width:500px;margin:auto;}
+input,button{padding:10px;font-size:16px;width:90%;margin:10px 0;}
+button{background:#9c27b0;color:white;border:none;border-radius:6px;}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h2>Riddle 4</h2>
+<p>What has hands but cannot clap?</p>
+
+<input id="answer">
+<button onclick="check()">Submit</button>
+</div>
+
+<script>
+function check(){
+  let ans = document.getElementById("answer").value.toLowerCase().trim();
+  if(ans === "clock"){
+    window.location.href="riddle5.html";
+  } else {
+    alert("Wrong answer! Try again.");
+  }
+}
+</script>
+
+</body>
+</html>
