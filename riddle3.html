@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 3</title>
+<style>
+body{font-family:Arial;text-align:center;background:#f0f0f0;padding:20px;}
+.box{background:#fff;padding:25px;border-radius:10px;max-width:500px;margin:auto;}
+input,button{padding:10px;font-size:16px;width:90%;margin:10px 0;}
+button{background:#ff9800;color:white;border:none;border-radius:6px;}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h2>Riddle 3</h2>
+<p>The more you take, the more you leave behind. What are they?</p>
+
+<input id="answer">
+<button onclick="check()">Submit</button>
+</div>
+
+<script>
+function check(){
+  let ans = document.getElementById("answer").value.toLowerCase().trim();
+  if(ans === "footsteps"){
+    window.location.href="riddle4.html";
+  } else {
+    alert("Wrong answer! Try again.");
+  }
+}
+</script>
+
+</body>
+</html>
